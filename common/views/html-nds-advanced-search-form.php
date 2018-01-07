@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * https://www.advancedcustomfields.com/resources/get_field_object/
  */
 
-// create a dropdown the for video languages.
+// create a dropdown list for video languages.
 $video_language_meta_key = 'field_5a06e1ba30626';
 $video_language_meta = get_field_object( $video_language_meta_key );
 
