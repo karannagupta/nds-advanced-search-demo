@@ -1,0 +1,204 @@
+[
+    {
+        "key": "group_5a06dd717dba1",
+        "title": "Video Meta",
+        "fields": [
+            {
+                "key": "field_5a06dd98ba3a5",
+                "label": "Metadata",
+                "name": "video_metadata",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5a06e1ba30626",
+                        "label": "Language",
+                        "name": "video_language",
+                        "type": "select",
+                        "instructions": "The language used in the video",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "English": "English",
+                            "French": "French",
+                            "Spanish": "Spanish",
+                            "Others": "Others"
+                        },
+                        "default_value": [
+                            "English"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a06e25730627",
+                        "label": "Time Duration",
+                        "name": "video_duration",
+                        "type": "select",
+                        "instructions": "Duration of the video",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Short ( less than 15 mins )": "Short ( less than 15 mins )",
+                            "Long ( less than 45 mins )": "Long ( less than 45 mins )",
+                            "Very Long ( over an hour )": "Very Long ( over an hour )"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a06e2a430628",
+                        "label": "Date",
+                        "name": "video_date",
+                        "type": "date_picker",
+                        "instructions": "Video release date",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "F j, Y",
+                        "return_format": "Ymd",
+                        "first_day": 1
+                    },
+                    {
+                        "key": "field_5a2137a8e4ebc",
+                        "label": "Free to distribute?",
+                        "name": "free_to_distribute",
+                        "type": "radio",
+                        "instructions": "Whether the video can be freely distributed without infringing copyright?",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Yes": "Yes",
+                            "No": "No"
+                        },
+                        "allow_null": 1,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "No",
+                        "layout": "horizontal",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_5a06e839fa24a",
+                        "label": "Video URL",
+                        "name": "video_url",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a06e7a0fa249",
+                        "label": "Description",
+                        "name": "video_credits",
+                        "type": "textarea",
+                        "instructions": "Video Credits.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "in 300 words or less",
+                        "maxlength": 300,
+                        "rows": 5,
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_5a06e88999752",
+                        "label": "Video Thumbnail",
+                        "name": "video_thumbnail",
+                        "type": "image",
+                        "instructions": "The featured image for the video that appears in the search.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "videolib"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
