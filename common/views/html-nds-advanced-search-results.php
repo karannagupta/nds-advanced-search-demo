@@ -88,8 +88,8 @@ foreach ( $user_selected_video_meta as $key => $value ) {
 				array_push( $meta_query,
 					array(
 						'key' => 'video_metadata_' . $key, // Custom field key.
-						'value' => $value, // Custom field value. Array support is limited to a compare value of 'IN', 'NOT IN', 'BETWEEN', or 'NOT BETWEEN'
 						'compare' => '=', // For arrays values are 'IN', 'NOT IN', 'BETWEEN', or 'NOT BETWEEN'.
+						'value' => $value, // Custom field value. Array support is limited to a compare value of 'IN', 'NOT IN', 'BETWEEN', or 'NOT BETWEEN'
 					)
 				);
 				break;
@@ -101,6 +101,7 @@ foreach ( $user_selected_video_meta as $key => $value ) {
 						'key' => 'video_metadata_video_date', // Custom field key.
 						'compare' => 'BETWEEN', // For arrays values are 'IN', 'NOT IN', 'BETWEEN', or 'NOT BETWEEN'.
 						'value' => array( $from_date->format( 'Ymd' ), $to_date->format( 'Ymd' ) ), // Custom field value.
+						'type'  => 'DATE',
 					)
 				);
 				break;
