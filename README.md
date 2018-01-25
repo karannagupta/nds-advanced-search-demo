@@ -13,7 +13,7 @@ _The intent is to help developers with a boilerplate search plugin with search s
 
 * Custom Fields were added using the premium version of [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/). The acf-json is available in the `import-acf-cpt` folder.
 * CPTs and Taxonomies were added using the free version of the [Custom Post Type UI plugin](https://wordpress.org/plugins/custom-post-type-ui/) by WebDevStudios. Use the cpt-json and cpt-taxonomies JSON files to import them.
-
+* Uses [jQuery Colorbox](https://github.com/jackmoore/colorbox) to load the popup.
 
 ## Screenshots
 
